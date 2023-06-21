@@ -1,0 +1,102 @@
+body > div {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("header.png");
+    background-position: center;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "MinecraftTen";
+    src: url("MinecraftTen.ttf");
+}
+
+@font-face {
+    font-family: "MinecraftFive";
+    src: url("MinecraftFive-Regular.ttf");
+}
+
+#buttons {
+    image-rendering: pixelated;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+#buttons > button {
+    transition: 0.2s;
+    width: 70px;
+    height: 100px;
+    background-color: #111;
+    border: none;
+    box-shadow: 0 -5px 0 0 #222 inset;
+    margin-left: 0.3cm;
+    position: relative;
+}
+
+#buttons > button > #label {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    color: white;
+    text-shadow: 0 2px 0 #0002;
+    font-family: "MinecraftTen";
+    transform: translateX(-50%);
+}
+
+#logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+    margin-top: 10%;
+}
+
+#buttons > button > #icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#buttons > button:hover {
+    background-color: greenyellow;
+    box-shadow: 0 -5px 0 0 rgb(2, 214, 2) inset;
+    transform: scale(1.1);
+    border: 2px solid #fff5;
+}
+
+#buttons > button:focus {
+    border-color: white;
+}
+
+#buttons > button:active {
+    transition: 0.05s;
+    box-shadow: none;
+    height: 95px;
+    margin-top: 5px;
+}
+
+#reminder {
+    background-color: #0019;
+    color: white;
+    width: 300px;
+    padding: 10px;
+    position: fixed;
+    top: 95%;
+    left: 95%;
+    transform: translate(-100%,-100%);
+    font-family: MinecraftFive;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 2px solid;
+}
